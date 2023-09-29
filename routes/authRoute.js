@@ -1,5 +1,5 @@
 const express = require("express");
-const { registerController, updateProfileController } = require("../contollers/registerController");
+const { registerController, updateProfileController, getUserDetailController, deleteUserProfileController } = require("../contollers/registerController");
 
 //router object
 const router = express.Router();
@@ -8,12 +8,12 @@ const router = express.Router();
 router.post("/create", registerController);
 
 //update profile
-router.put("/update", updateProfileController)
+router.put("/update", updateProfileController);
 
 // getting profile
-router.get("/get", updateProfileController)
+router.get("/get", getUserDetailController);
 
 //delete profile
-router.delete("/delete", updateProfileController)
+router.delete("/delete", deleteUserProfileController);
 
 module.exports = router;
