@@ -10,8 +10,6 @@ This is the backend component of a User Management System developed using the ME
 - [API Endpoints](#api-endpoints)
 - [Database](#database)
 - [Dependencies](#dependencies)
-- [Contributing](#contributing)
-- [License](#license)
 
 ## Prerequisites
 
@@ -42,23 +40,23 @@ MONGODB_URI=mongodb://localhost:27017/user_management
 
 Modify the PORT and MONGODB_URI values as needed.
 
-##Start the server:
+## Start the server:
 npm start
 The server should now be running on http://localhost:8080.
 
-##API Endpoints
+## API Endpoints
 The following API endpoints are available:
 
-POST /api/register: Create a new user.
-GET /api/get: Get a list of all users.
-PUT /api/update Update a specific user
-DELETE /api/delete Delete a specific user
+POST /api/register: Create a new user:
+GET /api/get: Get a list of all users:
+PUT /api/update Update a specific user:
+DELETE /api/delete Delete a specific user:
 Please refer to the API documentation for more details on how to use these endpoints.
 
-##Database
+## Database
 This project uses MongoDB as the database. Make sure you have MongoDB installed and running. You can configure the database connection in the .env file as mentioned in the Getting Started section.
 
-##Dependencies
+## Dependencies
 This project relies on the following major dependencies:
 
 Express.js: A web application framework for Node.js.
